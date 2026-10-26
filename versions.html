@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>版本记录｜山水之间</title>
+<style>
+  :root { --paper:#f4f1e9; --ink:#18352f; --muted:#65746d; --green:#174d43; --gold:#c99b45; --line:rgba(24,53,47,.16); }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.75; }
+  .shell { width:min(880px, calc(100vw - 48px)); margin-inline:auto; padding-block:72px 96px; }
+  h1 { font-family:"Noto Serif SC","Songti SC",serif; font-size:clamp(32px,4vw,46px); letter-spacing:-.02em; margin:0 0 14px; }
+  .lead { color:var(--muted); margin:0 0 44px; max-width:56ch; }
+  .row { display:grid; grid-template-columns:76px 1fr auto; gap:20px; align-items:start; padding:22px 24px; border-radius:18px; background:#fffdf7; text-decoration:none; color:inherit; margin-bottom:14px; transition:transform .2s ease; }
+  .row:hover { transform:translateY(-2px); }
+  .row.is-current { background:#e6efe9; }
+  .ver { font-family:"Noto Serif SC","Songti SC",serif; font-size:19px; color:var(--green); }
+  .body strong { display:block; font-size:15px; }
+  .date { font-size:11px; color:var(--muted); letter-spacing:.06em; }
+  .body ul { margin:8px 0 0; padding-left:16px; font-size:13px; color:var(--muted); }
+  .badge { font-size:11px; padding:4px 11px; border-radius:99px; background:rgba(23,77,67,.1); color:var(--green); white-space:nowrap; }
+  .row.is-current .badge { background:var(--gold); color:#fff; }
+  .back { display:inline-block; margin-top:32px; font-size:13px; color:var(--green); text-decoration:none; border-bottom:1px solid var(--line); padding-bottom:3px; }
+  @media (max-width:560px) { .row { grid-template-columns:1fr auto; } .ver { grid-column:1 / -1; } }
+</style>
+</head>
+<body>
+  <main class="shell">
+    <p style="font-size:11px;letter-spacing:.16em;color:var(--muted);margin:0 0 18px;">VERSION HISTORY / 版本记录</p>
+    <h1>行程改过几次，旧版都留着</h1>
+    <p class="lead">每次调整行程都存一份独立快照，样式一并存进文件本身。点开任意一版，看到的就是当时的完整页面。</p>
+    <a class="row is-current" href="versions/v9.0.html">
+      <span class="ver">v9.0</span>
+      <span class="body"><strong>包车按真实市价重算：7 座 GL8 全天 1300—1500，三段按趟 2300—2800</strong><span class="date">2026-10-26</span><ul><li>补公共交通可行性评估：仅 D3 直通车划算，D5/D6 淡季无早班车</li><li>自驾成本更新为 6 座 500—700/天，合计约 3860</li><li>预算：动卧版 24168/34108，白天版 23540/30910</li></ul></span>
+      <span class="badge">当前版本</span>
+    </a>
+<a class="row" href="versions/v8.0.html">
+      <span class="ver">v8.0</span>
+      <span class="body"><strong>新增白天版行程：G2942 07:03—14:46 去、G917 10:41—18:35 回，7 天 6 晚</strong><span class="date">2026-10-26</span><ul><li>两版互跳横幅，动卧版与白天版各自独立成页</li><li>白天版预算：经济 ¥22,840（人均 3,807）／舒适 ¥30,110（人均 5,018）</li></ul></span>
+      <span class="badge">旧版</span>
+    </a>
+<a class="row" href="versions/v7.0.html">
+      <span class="ver">v7.0</span>
+      <span class="body"><strong>作息整体后移：D6 起床 06:50→07:40、D5 早餐 07:30→08:00、D4 早餐 07:30→08:00、D7 睡到自然醒 09:00</strong><span class="date">2026-10-26</span><ul><li>晚间不再空转：D2 站前散步、D3 沟口慢走、D5 泡脚整理、D6 站前散步，熄灯时间统一推到 21:00—21:45</li><li>D6 时间轴重排，仍锁定 C9464 14:46，站内缓冲 76 分钟</li></ul></span>
+      <span class="badge">旧版</span>
+    </a>
+<a class="row" href="versions/v6.0.html">
+      <span class="ver">v6.0</span>
+      <span class="body"><strong>地面交通去掉 9 座：改为 7 座 GL8 级包车（三段），并补 6 座自驾完整方案</strong><span class="date">2026-10-26</span><ul><li>自驾分析重写：四段里程与疲劳度、成本对比（自驾约 ¥3,940 vs 包车+动车 ¥2,712）、行李与轮换规则</li><li>预算随 7 座报价调整：经济 ¥23,468 / 舒适 ¥33,308</li></ul></span>
+      <span class="badge">旧版</span>
+    </a>
+<a class="row" href="versions/v5.0.html">
+      <span class="ver">v5.0</span>
+      <span class="body"><strong>可选项并入日程：D4 晚间九寨千古情 + 非遗博物馆备选，D5 纪念碑碑园，D7 五个可选去处</strong><span class="date">2026-10-26</span><ul><li>删掉内嵌视频，恢复官方页面外链（画质不达要求）</li><li>九寨千古情演出票计入预算，经济 ¥23,474 / 舒适 ¥33,438</li></ul></span>
+      <span class="badge">旧版</span>
+    </a>
+<a class="row" href="versions/v4.0.html">
+      <span class="ver">v4.0</span>
+      <span class="body"><strong>往返改为动卧：11.15 夜车 D964，11.21 夜车 D962，成都多出半天</strong><span class="date">2026-10-26</span><ul><li>新增 12 项可选去处（成都市内 6 项、九寨沟 4 项、松潘 2 项），标注免费/加钱</li><li>下载并内嵌两段官方视频（熊猫基地 8s、九寨沟冰瀑 8s），带封面帧</li><li>酒店缩为 5 晚，预算重算：经济 ¥22,288 / 舒适 ¥32,252</li></ul></span>
+      <span class="badge">旧版</span>
+    </a>
+<a class="row" href="versions/v3.0.html">
+      <span class="ver">v3.0</span>
+      <span class="body"><strong>改用 skill 模板重做版面：全幅 hero、吸顶目录、路线表、逐日时间轴</strong><span class="date">2026-10-26</span><ul><li>补齐 9 个缺失板块：住宿卡、交通分段表、费用明细、深色对比、可选项目、美食、自驾分析、真实性声明</li><li>五个景点扩写为两段深度介绍 + 五点亮点 + 六项事实 + 平台绑定评价，松州古城补挂到 D6</li></ul></span>
+      <span class="badge">旧版</span>
+    </a>
+<a class="row" href="versions/v2.0.html">
+      <span class="ver">v2.0</span>
+      <span class="body"><strong>新增牟尼沟·扎嘎瀑布，D6 重排并锁定 C9464</strong><span class="date">2026-10-26</span><ul><li>新增双档预算（经济 ¥21,660 / 舒适 ¥29,204）</li><li>评价绑定携程/同程/去哪儿/小红书评分，视频改为卡片</li><li>补充高铁儿童票规则、孩子任务卡与景区急救电话</li><li>整页改为单文件自包含，CSS 与图片内联，不依赖子资源</li></ul></span>
+      <span class="badge">旧版</span>
+    </a>
+<a class="row" href="versions/v1.0.html">
+      <span class="ver">v1.0</span>
+      <span class="body"><strong>改造前基线：4 景点、单档住宿预算、评价为平台主题归纳</strong><span class="date">2026-10-26</span></span>
+      <span class="badge">旧版</span>
+    </a>
+    <a class="back" href="index.html">← 返回当前版本</a>
+  </main>
+</body>
+</html>
